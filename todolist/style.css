@@ -24,3 +24,7 @@ body {
   font-size: 2rem;
   width: 100px;
 }
+.wrapper {
+  border: 2px solid red;
+  display: flex;
+}
