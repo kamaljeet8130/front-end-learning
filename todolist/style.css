@@ -37,3 +37,7 @@ body {
   font-family: cursive;
   border: none;
 }
+.wrapper {
+  border: 2px solid red;
+  display: flex;
+}
