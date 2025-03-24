@@ -1,26 +1,39 @@
 body {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
+  height: 100vh;
+  flex-direction: column;
 }
+
 .input {
+  border-radius: 10px;
   width: 500px;
-  height: 70px;
   text-align: center;
   font-size: 2rem;
-  border: 2px solid red;
 }
 .task {
   width: 500px;
-  height: 70px;
   text-align: center;
   font-size: 2rem;
-  border: 2px solid red;
+  background: aliceblue;
+  border-radius: 10px;
 }
 
 .btn {
   margin: 10px;
-  padding: 10px;
+  width: 50px;
+  border-radius: 10px;
+  border: none;
   font-size: 2rem;
-  width: 100px;
+  text-align: center;
+}
+
+.theme-btn {
+  background: transparent;
+  padding: 10px;
+  font-size: 3rem;
+  font-family: cursive;
+  border: none;
 }
