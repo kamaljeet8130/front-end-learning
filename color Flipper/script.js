@@ -1,7 +1,7 @@
 const min = 1048576;
 const max = 16777215;
 function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + 1);
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 function hexDecimalGenerator(number) {
@@ -16,13 +16,14 @@ function hexDecimalGenerator(number) {
 }
 
 const btn = document.querySelector('.btn');
+const spanText = document.getElementById('hex-text');
+const logo = document.querySelector('.logo');
+console.log(spanText);
 btn.addEventListener('click', function changeBodyBackgroundColor() {
   const randomNumber = getRandomNumber(min, max);
   const hexDecimalNumber = hexDecimalGenerator(randomNumber);
-
-  btn.style.color = 'aliceblue';
-  if (hexDecimalNumber === 'ffffff') {
-    btn.style.color = 'black';
-  }
   document.body.style.background = `#${hexDecimalNumber}`;
+  spanText.textContent = `#${hexDecimalNumber}`;
+  spanText.style.color = `#${hexDecimalNumber}`;
+  logo.style.color = `#${hexDecimalNumber}`;
 });
