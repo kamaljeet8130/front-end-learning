@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #8274ff;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #d0f1ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  background: #fbfbfb;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  width: 700px;
+  text-align: center;
+  border-radius: 30px;
+}
+.user-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+.img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  background: url(assets/person-1.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quotation {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 2.5rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  left: 20px;
+  top: -1px;
+}
+.content {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.name {
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  padding: 5px;
+  width: max-content;
+}
+.role {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-weight: bolder;
+  padding: 10px;
+  font-size: 1.2rem;
+  width: max-content;
+}
+.about {
+  word-spacing: 0.2rem;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.swiper {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+}
+.swipe {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--primary-color);
+  padding: 2px;
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 30px;
+  margin: 10px;
+  border: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: white;
+}
