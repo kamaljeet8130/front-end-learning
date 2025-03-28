@@ -38,6 +38,9 @@ body {
 .decrease {
   color: red;
 }
+.reset {
+  color: black;
+}
 
 .counter-value {
   transition: color 0.3s, transform 0.2s;
