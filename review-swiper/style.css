@@ -30,16 +30,19 @@ body {
 .user-img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  background-color: var(--primary-color);
   position: relative;
 }
-.img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.box {
   position: absolute;
-  right: 20px;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.img-background {
+  background-color: var(--primary-color);
+  left: 20px;
+}
+.img {
   background: url(assets/person-1.jpeg);
   background-position: center;
   background-size: cover;
@@ -53,12 +56,11 @@ body {
   height: 30px;
   border-radius: 50%;
   text-align: center;
-  position: absolute;
   left: 20px;
   top: -1px;
 }
 .content {
-  max-width: 600px;
+  max-width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
