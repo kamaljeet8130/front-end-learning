@@ -1,0 +1,37 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background: floralwhite;
+  align-items: baseline;
+  flex-wrap: wrap;
+  flex-flow: wrap row;
+  gap: 10px;
+}
+.logo {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+ul > li {
+  list-style: none;
+}
+ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+}
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.icons {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 20px;
+}
