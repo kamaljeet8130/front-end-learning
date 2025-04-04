@@ -4,34 +4,39 @@
   box-sizing: border-box;
 }
 .navbar {
+  border: 2px solid red;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 20px;
-  background: floralwhite;
   align-items: baseline;
-  flex-wrap: wrap;
-  flex-flow: wrap row;
-  gap: 10px;
-}
-.logo {
-  text-transform: capitalize;
   font-size: 2rem;
 }
-ul > li {
+.btn {
+  border: 2px solid red;
+  border: none;
+  font-size: 2rem;
+  background: transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  background: black;
+  color: wheat;
+}
+
+.sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2rem;
+  padding: 10px;
+  background: black;
+  color: wheat;
+}
+
+.link {
   list-style: none;
 }
-ul > li > a {
-  text-decoration: none;
-  color: black;
-  font-size: 1.5rem;
-}
-ul {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 10px;
-}
-.icons {
-  font-size: 1.5rem;
-  display: flex;
-  gap: 20px;
+.hidden {
+  display: none;
 }
