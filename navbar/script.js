@@ -1,16 +1,6 @@
-const sections = document.querySelector('.sections');
-const btn = document.querySelector('.btn');
+const navToggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
 
-let isSections = true;
-function toggleNavbar() {
-  if (isSections) {
-    sections.classList.remove('hidden');
-    console.log(`inside if : ${isSections}`);
-    isSections = false;
-  } else {
-    sections.classList.add('hidden');
-    console.log(`inside else : ${isSections}`);
-    isSections = true;
-  }
-}
-btn.addEventListener('click', toggleNavbar);
+navToggle.addEventListener('click', function () {
+  links.classList.toggle('show-links');
+});
