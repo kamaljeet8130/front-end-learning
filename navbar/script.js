@@ -1,16 +1,17 @@
-const sections = document.querySelector('.sections');
-const btn = document.querySelector('.btn');
+const navToggle = document.querySelector('.nav-toggle');
+const links = document.querySelector('.links');
+let isNav = true;
 
-let isSections = true;
-function toggleNavbar() {
-  if (isSections) {
-    sections.classList.remove('hidden');
-    console.log(`inside if : ${isSections}`);
-    isSections = false;
+function toggleFunctionality() {
+  if (isNav) {
+    links.classList.add('remove-links');
+    links.classList.remove('show-links');
+    isNav = false;
   } else {
-    sections.classList.add('hidden');
-    console.log(`inside else : ${isSections}`);
-    isSections = true;
+    links.classList.remove('remove-links');
+    links.classList.add('show-links');
+    isNav = true;
   }
 }
-btn.addEventListener('click', toggleNavbar);
+
+navToggle.addEventListener('click', toggleFunctionality);
