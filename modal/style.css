@@ -1,0 +1,72 @@
+body {
+  background: url('./assets/backgroundImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  height: 300px;
+  width: 600px;
+  border-radius: 10px;
+  background: whitesmoke;
+}
+.container1 {
+  height: 300px;
+  width: 500px;
+  border-radius: 10px;
+  background: whitesmoke;
+  z-index: 1;
+  border: 2px solid;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.sub-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  position: relative;
+}
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.btn {
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 500;
+  background: #60b5ff;
+  color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn:hover {
+  background: transparent;
+  border: 4px solid #60b5ff;
+  color: black;
+  transform: scale(1.05);
+}
+.fa {
+  font-size: 10rem;
+  color: red;
+}
+.close {
+  background: transparent;
+}
+.close:hover {
+  border: none;
+}
