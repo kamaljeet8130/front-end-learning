@@ -13,7 +13,7 @@ function addContainerToBody() {
   subContainer.appendChild(container1);
   const closeBtn = document.querySelector('.close');
   closeBtn.addEventListener('click', (event) => {
-    console.log(event.target);
+    subContainer.removeChild(container1);
   });
 }
 
