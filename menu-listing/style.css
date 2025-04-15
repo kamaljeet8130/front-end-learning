@@ -189,3 +189,51 @@ main {
   justify-content: center;
   gap: 2rem;
 }
+/* menu */
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+}
+
+.menu-item {
+  background-color: var(--clr-grey-10);
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.item-img {
+  border: 4px solid var(--clr-gold);
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 300px;
+  height: 200px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+.description > p {
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.description > span {
+  margin-left: auto;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
