@@ -5,7 +5,7 @@ const menu = [
     category: 'breakfast',
     description: 'Fluffy pancakes served with maple syrup and butter.',
     price: '$5.99',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast01.jpeg',
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const menu = [
     category: 'breakfast',
     description: 'Three-egg omelette with cheese, veggies, and ham.',
     price: '$6.50',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast02.jpeg',
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const menu = [
     category: 'breakfast',
     description: 'Classic French toast topped with powdered sugar.',
     price: '$5.75',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast03.jpeg',
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const menu = [
     category: 'lunch',
     description: 'Triple-decker sandwich with turkey, bacon, and lettuce.',
     price: '$7.99',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch01.jpeg',
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ const menu = [
     category: 'lunch',
     description: 'Fresh salad topped with grilled chicken and house dressing.',
     price: '$8.25',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch02.jpeg',
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ const menu = [
     category: 'lunch',
     description: 'Whole wheat wrap filled with seasonal grilled veggies.',
     price: '$6.75',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch04.jpeg',
   },
   {
     id: 7,
@@ -53,7 +53,7 @@ const menu = [
     category: 'lunch',
     description: 'Beef patty with cheddar, lettuce, tomato, and pickles.',
     price: '$9.00',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch01.jpeg',
   },
   {
     id: 8,
@@ -61,7 +61,7 @@ const menu = [
     category: 'shakes',
     description: 'Creamy vanilla shake topped with whipped cream.',
     price: '$3.99',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake01.jpeg',
   },
   {
     id: 9,
@@ -69,7 +69,7 @@ const menu = [
     category: 'shakes',
     description: 'Fresh strawberry blend with yogurt and honey.',
     price: '$4.50',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake02.jpeg',
   },
   {
     id: 10,
@@ -77,7 +77,7 @@ const menu = [
     category: 'shakes',
     description: 'Rich chocolate shake with fudge drizzle and sprinkles.',
     price: '$4.25',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake03.jpeg',
   },
   {
     id: 11,
@@ -85,7 +85,7 @@ const menu = [
     category: 'breakfast',
     description: 'Sourdough toast topped with smashed avocado and spices.',
     price: '$6.00',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast03.jpeg',
   },
   {
     id: 12,
@@ -94,7 +94,7 @@ const menu = [
     description:
       'Romaine lettuce with Caesar dressing, croutons, and parmesan.',
     price: '$7.25',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch01.jpeg',
   },
   {
     id: 13,
@@ -102,7 +102,7 @@ const menu = [
     category: 'shakes',
     description: 'Mixed berries and banana with a yogurt base.',
     price: '$4.75',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake04.jpeg',
   },
   {
     id: 14,
@@ -110,7 +110,7 @@ const menu = [
     category: 'breakfast',
     description: 'Light and fluffy eggs served with buttery toast.',
     price: '$5.50',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast02.jpeg',
   },
   {
     id: 15,
@@ -118,7 +118,7 @@ const menu = [
     category: 'lunch',
     description: 'Bacon, lettuce, and tomato on toasted bread.',
     price: '$6.99',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast03.jpeg',
   },
   {
     id: 16,
@@ -126,7 +126,7 @@ const menu = [
     category: 'shakes',
     description: 'Tropical mango shake made with fresh mango pulp.',
     price: '$4.00',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake03.jpeg',
   },
   {
     id: 17,
@@ -134,7 +134,7 @@ const menu = [
     category: 'breakfast',
     description: 'Poached eggs with hollandaise sauce on an English muffin.',
     price: '$7.50',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast04.jpeg',
   },
   {
     id: 18,
@@ -142,7 +142,7 @@ const menu = [
     category: 'lunch',
     description: 'Whole wheat wrap with tuna salad and lettuce.',
     price: '$7.75',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch04.jpeg',
   },
   {
     id: 19,
@@ -150,7 +150,7 @@ const menu = [
     category: 'shakes',
     description: 'Minty fresh shake with chocolate chips.',
     price: '$4.30',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake03.jpeg',
   },
   {
     id: 20,
@@ -158,7 +158,7 @@ const menu = [
     category: 'breakfast',
     description: 'Tortilla filled with eggs, cheese, and sausage.',
     price: '$6.85',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast03.jpeg',
   },
   {
     id: 21,
@@ -166,7 +166,7 @@ const menu = [
     category: 'lunch',
     description: 'Grilled tortilla stuffed with chicken, cheese, and peppers.',
     price: '$8.50',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch04.jpeg',
   },
   {
     id: 22,
@@ -174,7 +174,7 @@ const menu = [
     category: 'breakfast',
     description: 'Pancakes loaded with blueberries and topped with syrup.',
     price: '$6.25',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast01.jpeg',
   },
   {
     id: 23,
@@ -182,7 +182,7 @@ const menu = [
     category: 'shakes',
     description: 'Coffee-infused chocolate shake with whipped cream.',
     price: '$4.65',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake03.jpeg',
   },
   {
     id: 24,
@@ -190,7 +190,7 @@ const menu = [
     category: 'lunch',
     description: 'Tomatoes, cucumbers, feta cheese, and olives in vinaigrette.',
     price: '$7.50',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch04.jpeg',
   },
   {
     id: 25,
@@ -198,7 +198,7 @@ const menu = [
     category: 'shakes',
     description: 'Protein-packed banana shake perfect for post-workout.',
     price: '$4.95',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake02.jpeg',
   },
   {
     id: 26,
@@ -206,7 +206,7 @@ const menu = [
     category: 'breakfast',
     description: 'Golden and crispy shredded potatoes.',
     price: '$3.50',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast03.jpeg',
   },
   {
     id: 27,
@@ -214,7 +214,7 @@ const menu = [
     category: 'lunch',
     description: 'Tender BBQ chicken served on a toasted bun.',
     price: '$8.75',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch02.jpeg',
   },
   {
     id: 28,
@@ -222,7 +222,7 @@ const menu = [
     category: 'shakes',
     description: 'Creamy peanut butter shake with a hint of chocolate.',
     price: '$4.80',
-    image: 'https://via.placeholder.com/150',
+    image: './images/shake01.jpeg',
   },
   {
     id: 29,
@@ -230,7 +230,7 @@ const menu = [
     category: 'breakfast',
     description: 'Layers of granola, yogurt, and seasonal fruits.',
     price: '$5.25',
-    image: 'https://via.placeholder.com/150',
+    image: './images/breakfast03.jpeg',
   },
   {
     id: 30,
@@ -238,6 +238,6 @@ const menu = [
     category: 'lunch',
     description: 'Crispy falafel balls with veggies and tahini in pita bread.',
     price: '$7.95',
-    image: 'https://via.placeholder.com/150',
+    image: './images/lunch01.jpeg',
   },
 ];
