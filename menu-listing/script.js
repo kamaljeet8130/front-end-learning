@@ -1,11 +1,9 @@
 const btns = document.querySelectorAll('.btn');
 const allBtn = document.querySelector('.all');
-
 const lunchBtn = document.querySelector('.lunch');
 const breakfastBtn = document.querySelector('.breakfast');
 const shakesBtn = document.querySelector('.shakes');
 const menuItem = document.querySelector('.menu');
-
 function displayAllMenu() {
   menuItem.innerHTML = '';
   console.log('all btn clicked');
