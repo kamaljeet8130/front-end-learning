@@ -365,13 +365,12 @@ footer p {
   border-radius: var(--radius);
   color: var(--clr-white);
   animation: bounce 2s ease-in-out infinite;
-
   visibility: hidden;
   z-index: -100;
 }
 .show-link {
   visibility: visible;
-  z-index: 100;
+  z-index: 1000;
 }
 
 @keyframes bounce {
