@@ -40,7 +40,32 @@ const randomYear =
   Math.floor(Math.random() * (maxYear - minYear + 1)) + minYear;
 randomYearContainer.textContent = randomYear;
 
-const date = new Date(randomYear, randomMonth, randomDate);
-const day = date.getDay();
+const futureDate = new Date(randomYear, randomMonth, randomDate);
+const day = futureDate.getDay();
 const randomDay = dayName[day];
 randomDayContainer.textContent = randomDay;
+
+const remainingDayContainer = document.querySelector('.remaining-day');
+const remainingHourContainer = document.querySelector('.remaining-hours');
+const remainingMinContainer = document.querySelector('.remaining-min');
+const remainingSecContainer = document.querySelector('.remaining-sec');
+
+function updateRemainingTime() {
+  const currentDate = new Date();
+  const diff = futureDate - currentDate;
+  if (diff <= 0) {
+    console.log('Time is up!!');
+  }
+  const totalSeconds = Math.floor(diff / 1000);
+  const seconds = totalSeconds % 60;
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+  const days = Math.floor(totalSeconds / (3600 * 24));
+
+  remainingDayContainer.textContent = days;
+  remainingHourContainer.textContent = hours;
+  remainingMinContainer.textContent = minutes;
+  remainingSecContainer.textContent = seconds;
+}
+
+setInterval(updateRemainingTime, 1000);
