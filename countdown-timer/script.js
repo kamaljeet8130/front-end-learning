@@ -1,7 +1,7 @@
-const dayContainer = document.querySelector('.day');
-const dateContainer = document.querySelector('.date');
-const monthContainer = document.querySelector('.month');
-const yearContainer = document.querySelector('.year');
+const randomDayContainer = document.querySelector('.random-day');
+const randomDateContainer = document.querySelector('.random-date');
+const randomMonthContainer = document.querySelector('.random-month');
+const randomYearContainer = document.querySelector('.random-year');
 
 const dayName = [
   'Sunday',
@@ -30,17 +30,17 @@ const monthName = [
 const minYear = 2025;
 const maxYear = 2030;
 
-const randomDate = Math.floor(Math.random() * 31);
-dateContainer.textContent = randomDate;
+const randomDate = Math.floor(Math.random() * 31) + 1;
+randomDateContainer.textContent = randomDate;
 
 const randomMonth = Math.floor(Math.random() * 12);
-monthContainer.textContent = monthName[randomMonth];
+randomMonthContainer.textContent = monthName[randomMonth];
 
 const randomYear =
   Math.floor(Math.random() * (maxYear - minYear + 1)) + minYear;
-yearContainer.textContent = randomYear;
+randomYearContainer.textContent = randomYear;
 
 const date = new Date(randomYear, randomMonth, randomDate);
 const day = date.getDay();
 const randomDay = dayName[day];
-dayContainer.textContent = randomDay;
+randomDayContainer.textContent = randomDay;
