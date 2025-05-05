@@ -28,7 +28,7 @@ const monthName = [
 ];
 
 const minYear = 2025;
-const maxYear = 2030;
+const maxYear = 2025;
 
 const randomDate = Math.floor(Math.random() * 31) + 1;
 randomDateContainer.textContent = randomDate;
