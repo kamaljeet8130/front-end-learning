@@ -10,7 +10,7 @@
 
 <body>
     <!-- top section -->
-    <div class="border-2 border-red-600 flex flex-col gap-4 justify-center items-center ">
+    <div class="border-2  flex flex-col gap-4 justify-center items-center ">
         <div class="text-3xl font-extrabold">About</div>
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quos.</div>
     </div>
@@ -22,19 +22,19 @@
         </div>
         <div class="h-[500px] w-[500px] ">
             <div>
-                <ul class="flex justify-around text-2xl  gap-5 border ">
-                    <li class="border p-3">History</li>
-                    <li class="p-3">Vision</li>
-                    <li class="p-3">Goal</li>
+                <ul class="flex justify-around text-2xl gap-5 border">
+                    <li class="tab-btn border p-3  active-tab" data-category="History">History</li>
+                    <li class="tab-btn p-3" data-category="Vision">Vision</li>
+                    <li class="tab-btn p-3" data-category="Goal">Goal</li>
                 </ul>
             </div>
-            <div>
-
+            <div id="tab-content" class="mt-4 text-lg leading-relaxed">
             </div>
         </div>
     </div>
 
     <!-- end of tab content -->
+    <script src="style.js"></script>
 </body>
 
 </html>
