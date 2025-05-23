@@ -5,6 +5,7 @@
   font-weight: bold;
   color: #1e3a8a;
   background: linear-gradient(135deg, #c3dafe, #93c5fd);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease-out, color 0.3s ease;
   cursor: pointer;
+  text-transform: capitalize;
 }
