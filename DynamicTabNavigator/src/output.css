@@ -17,9 +17,11 @@
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
+    --font-weight-bold: 700;
     --font-weight-extrabold: 800;
     --leading-relaxed: 1.625;
     --radius-3xl: 1.5rem;
+    --radius-4xl: 2rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
@@ -178,17 +180,44 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mb-1 {
+    margin-bottom: calc(var(--spacing) * 1);
+  }
+  .mb-1\.5 {
+    margin-bottom: calc(var(--spacing) * 1.5);
+  }
   .flex {
     display: flex;
   }
   .table {
     display: table;
   }
+  .h-full {
+    height: 100%;
+  }
+  .max-h-\[200px\] {
+    max-height: 200px;
+  }
+  .max-h-\[300px\] {
+    max-height: 300px;
+  }
+  .max-h-\[450px\] {
+    max-height: 450px;
+  }
+  .max-h-\[500px\] {
+    max-height: 500px;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-full {
+    width: 100%;
+  }
   .max-w-\[400px\] {
     max-width: 400px;
+  }
+  .max-w-\[450px\] {
+    max-width: 450px;
   }
   .max-w-\[500px\] {
     max-width: 500px;
@@ -211,11 +240,17 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .items-baseline {
+    align-items: baseline;
+  }
   .items-center {
     align-items: center;
   }
   .justify-around {
     justify-content: space-around;
+  }
+  .justify-between {
+    justify-content: space-between;
   }
   .justify-center {
     justify-content: center;
@@ -229,11 +264,17 @@
   .gap-9 {
     gap: calc(var(--spacing) * 9);
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded {
     border-radius: 0.25rem;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
+  }
+  .rounded-4xl {
+    border-radius: var(--radius-4xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -249,6 +290,15 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
+  }
+  .object-fill {
+    object-fit: fill;
+  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -257,6 +307,12 @@
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-9 {
+    padding: calc(var(--spacing) * 9);
+  }
+  .p-\[10px\] {
+    padding: 10px;
   }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
@@ -282,6 +338,10 @@
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
     line-height: var(--leading-relaxed);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);

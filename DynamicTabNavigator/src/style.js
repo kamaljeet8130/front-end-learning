@@ -6,8 +6,8 @@ const organizationDetails = [
   },
   {
     category: 'Vision',
-    content:
-      'Our vision is to create a world where technology empowers every individual and organization to achieve more. We aim to lead the digital transformation wave by delivering sustainable, scalable, and secure tech solutions that enhance productivity, connectivity, and quality of life.',
+    content: `Our vision is to create a world where technology empowers every individual and organization to achieve more. We aim to lead the digital transformation wave by delivering sustainable, scalable, and secure tech solutions that enhance productivity, connectivity, and quality of life.
+      Our vision is to create a world where technology empowers every individual and organization to achieve more. We aim to lead the digital transformation wave by delivering sustainable, scalable, and secure tech solutions that enhance productivity, connectivity, and quality of life.`,
   },
   {
     category: 'Goal',
@@ -17,6 +17,8 @@ const organizationDetails = [
 ];
 const tabContent = document.querySelector('#tab-content');
 const tabBtn = Array.from(document.querySelectorAll('.tab-btn'));
+const category = document.querySelector('#category');
+
 const savedCategory =
   localStorage.getItem('lastClickedCategory') ||
   tabBtn[0].getAttribute('data-category');
@@ -27,6 +29,7 @@ const categoryData = organizationDetails.find(
 
 if (categoryData) {
   tabContent.textContent = categoryData.content;
+  category.textContent = savedCategory;
   tabBtn.forEach((tab) => {
     tab.classList.toggle(
       'active-tab',
@@ -46,8 +49,10 @@ tabBtn.forEach((tab) => {
     );
     if (categoryData) {
       tabContent.textContent = categoryData.content;
+      category.textContent = clickedCategory;
     } else {
       tabContent.textContent = 'No matching content found.';
     }
   });
 });
+console.log(document.body);
