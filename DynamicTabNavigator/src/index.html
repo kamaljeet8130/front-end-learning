@@ -8,22 +8,29 @@
     <title>Dynamic Tab</title>
 </head>
 
-<body>
+<body class="flex flex-col justify-center items-center min-h-screen bg-gray-200">
     <!-- top section -->
-    <div class="border-2  flex flex-col gap-4 justify-center items-center ">
-        <div class="text-3xl font-extrabold">About</div>
-        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, quos.</div>
+    <div class="m-10">
+        <div class="flex flex-col gap-4 justify-center items-center ">
+            <div class="text-3xl font-extrabold">About</div>
+            <div class="text-2xl text-center max-w-xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Similique, quos.
+            </div>
+        </div>
     </div>
+
     <!-- end of top section -->
     <!-- tab content -->
-    <div class="h-full w-full border flex justify-center  gap-9  ">
-        <div class="h-[500px] w-[500px]">
-            <img src="../assets/images/hero-bcg.jpeg" alt="hero-image" srcset="">
+    <div class="  flex flex-wrap justify-center  gap-9 p-5 bg-white rounded-3xl shadow-md  ">
+        <div class="max-w-[400px]">
+            <img src="../assets/images/hero-bcg.jpeg" alt="hero-image" class="rounded-3xl shadow">
         </div>
-        <div class="h-[500px] w-[500px] ">
+        <div class="max-w-[500px]">
             <div>
-                <ul class="flex justify-around text-2xl gap-5 border">
-                    <li class="tab-btn border p-3  active-tab" data-category="History">History</li>
+                <ul class="flex justify-around text-2xl gap-5 border-b pb-2 cursor-pointer">
+                    <li class="tab-btn  p-3  active-tab" data-category="History">History
+                    </li>
                     <li class="tab-btn p-3" data-category="Vision">Vision</li>
                     <li class="tab-btn p-3" data-category="Goal">Goal</li>
                 </ul>
