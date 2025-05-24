@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <!-- nav section -->
+    <nav class="border p-4 flex justify-between items-center">
+        <!-- Logo + Brand -->
+        <div class="flex items-center gap-2">
+            <img src="../assets/asset 0.png" alt="ToDesktop Logo" />
+            <a href="#" class="text-2xl font-bold text-gray-800">ToDesktop</a>
+        </div>
+
+        <!-- Navigation Links (hidden on small screens) -->
+        <ul class="hidden md:flex items-center gap-6 text-gray-700 text-sm font-medium">
+            <li><a href="#" class="hover:text-primary transition-colors">Pricing</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Docs</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Changelog</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Blogs</a></li>
+            <li><a href="#" class="hover:text-primary transition-colors">Login</a></li>
+        </ul>
+
+        <!-- CTA Button & Mobile Menu Toggle -->
+        <div class="flex items-center gap-4">
+            <!-- CTA: Electron Developers (hidden on small screens) -->
+            <button
+                class="hidden md:flex items-center gap-2 border border-gray-300 px-4 py-2 rounded hover:bg-gray-100 transition">
+                <img src="../assets/asset 1.svg" alt="Electron Icon" class="h-5 w-5" />
+                <span class="text-sm font-medium">Electron Developers</span>
+                <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+            <!-- Hamburger icon (visible only on small screens) -->
+            <button aria-label="Open mobile menu" class="md:hidden text-2xl text-gray-800">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- end of nav section -->
+</body>
+
+</html>
